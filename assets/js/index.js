@@ -39,7 +39,7 @@ function getUserInfo() {
       }
       // 调用 renderAvatar 函数，渲染用户头像
       renderAvatar(res.data)
-    },
+    }
     // // 不论成功还是失败，最终都会调用 complete 回调函数
     // complete: function (res) {
     //   // console.log('执行了 complete 回调：')
@@ -58,7 +58,7 @@ function getUserInfo() {
 // 渲染用户头像
 function renderAvatar(user) {
   // 1.获取用户的名称
-  var name = user.nikcname || user.username
+  var name = user.nickname || user.username
   // 2.设置欢迎的文本
   $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
   // 3.按需渲染用户的头像
